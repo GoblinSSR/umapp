@@ -1,8 +1,10 @@
-import StyledAside from './styled/styledAside'
-import DragButton from './drag/dragButton';
+import StyledAside from 'components/styled/styledAside'
+import DragButton from 'components/drag/dragButton'
 const Aside = () => {
-    return <StyledAside>
-			<DragButton />
-		</StyledAside>
+    return (
+        <StyledAside>
+            <DragButton />
+        </StyledAside>
+    )
 }
 export default Aside
