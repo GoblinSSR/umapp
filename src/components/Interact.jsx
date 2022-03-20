@@ -50,4 +50,7 @@ const Container = () => {
 		</StyledPhone>
 		</StyledContainer>
 }
-export default Container
+const Interact = ()=>{
+	return <p>Interact</p>
+}
+export default Interact; 

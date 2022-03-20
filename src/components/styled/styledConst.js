@@ -1,5 +1,9 @@
-const headerHeight = '40px'
+const headerHeight = '60px'
 const asideWidth = '250px'
-const panelWidth = '250px'
+const panelWidth = '400px'
 const borderColor = 'black'
-export { headerHeight, borderColor, asideWidth, panelWidth }
+const containerBg = '#f5f5f6';
+const phoneWidth = '375px';
+const phoneHeight = '667px';
+export { headerHeight, borderColor, asideWidth, panelWidth, containerBg, phoneWidth, phoneHeight}
+

@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDrag } from 'react-dnd'
-import StyledDragButton from 'components/styled/styledDragButton'
+import StyledDragComponent from 'components/styled/styledDragComponent'
 /*
 const movePosition = (x, y) => {
     console.log(x, y)
@@ -8,17 +8,17 @@ const movePosition = (x, y) => {
 */
 const DragButton = () => {
     const [{ isDragging }, drag ] = useDrag(() => ({
-        type: 'dragComponent',
+        type: 'dragContainer',
         item: {
             typeName: 'button',
         },
         collect: (monitor) => ({
-            isDragging: !!monitor.isDragging(),
+            isDragging: monitor.isDragging(),
         }),
         //drop: () => movePosition(),
     }))
     return (
-        <StyledDragButton>
+        <StyledDragComponent>
 			<div
 			ref={drag}
 			style={{
@@ -27,9 +27,9 @@ const DragButton = () => {
 					fontWeight: 'bold',
 					cursor: 'move',
 			}}>
-			aaaa
+			Button
 			</div>
-        </StyledDragButton>
+        </StyledDragComponent>
     )
 }
 export default DragButton

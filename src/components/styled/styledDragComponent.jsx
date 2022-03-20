@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 const StyledDragButton= styled.div`
     display: block;
-	color: #fff;
+	color: black;
 	height: 40px;
 	line-height: 40px;
 	width: 100px;
