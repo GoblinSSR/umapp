@@ -1,11 +1,5 @@
 import React from 'react'
 import { useDrag } from 'react-dnd'
-import StyledDragComponent from 'components/styled/styledDragComponent'
-/*
-const movePosition = (x, y) => {
-    console.log(x, y)
-}
-*/
 const DragButton = () => {
     const [{ isDragging }, drag ] = useDrag(() => ({
         type: 'dragContainer',
@@ -18,7 +12,6 @@ const DragButton = () => {
         //drop: () => movePosition(),
     }))
     return (
-        <StyledDragComponent>
 			<div
 			ref={drag}
 			style={{
@@ -29,7 +22,6 @@ const DragButton = () => {
 			}}>
 			Button
 			</div>
-        </StyledDragComponent>
     )
 }
 export default DragButton
